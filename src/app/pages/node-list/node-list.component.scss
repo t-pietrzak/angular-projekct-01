@@ -1,0 +1,42 @@
+@import '../../../variables.scss';
+.title{
+    background-color: $main-color;
+    background: linear-gradient(90deg, $main-color 0%, $accents-color 50%, $second-color 100%);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: $light-font;
+    padding: 10px 0;
+    line-height: 1;
+}
+
+.list{
+    height: calc(80vh - 48px);
+    width: 60%;
+    padding: 30px 0;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0px 2px 15px 2px $shadow-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    & > * {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.search {
+    width: 100%;
+    margin: 10px 0;
+
+    & > * {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
